@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.styles.min.css" />
+    <script
+      src="https://kit.fontawesome.com/df56eb9e58.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Senko Nikolai</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <div class="logo">
+          <p>Junior Frontend Developer</p>
+          <p>Nikolai Senko</p>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="#about" class="navigation-link">About</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#portfolio" class="navigation-link">Portfolio</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#experience" class="navigation-link">Experience</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#contact" class="navigation-link">Contact</a>
+            </li>
+            <i class="fa-regular fa-circle-xmark" onclick="onCloseMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="onOpenMenu()"></i>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="about">
+        <div class="about-container container">
+          <div class="about-image-wrapper">
+            <img
+              class="about-image"
+              src="./images/me.jpg"
+              alt="Nikolai Senko"
+            />
+          </div>
+          <div class="about-description-wrapper">
+            <h2 class="about-subtitle subtitle">About me</h2>
+            <h3 class="about-text">
+              Hi, my name is <strong>Nikolai Senko</strong>. Currently, I'm in
+              search of a position where I can grow as a specialist.
+            </h3>
+            <p class="about-text">
+              I am up-and-coming Junior Front-end developer. I've taken part in
+              4 different projects, have been working in a team with backend
+              developers, have learnt much about frontend in field. And now I'm
+              ready for new career heights. My advantages include stress
+              tolerance, self-assurance, ability to take responsibility. I'm an
+              open-minded person and will be a great team member.
+            </p>
+            <p class="about-text">
+              As for the hobbies I like play volleyball. I would like to learn
+              to play at decent level, so I have to put some efforts here as
+              well. Also I like to be in charge of party organization within our
+              friends' company. Sometimes I have to do many things if I want the
+              occasion to happen.
+            </p>
+
+            <section class="slider slider-wrapper">
+              <div class="slider-images">
+                <img
+                  class="slider-image"
+                  id="slide-1"
+                  src="./images/sport.jpg"
+                  alt="slider-photo-1"
+                />
+                <img
+                  class="slider-image"
+                  id="slide-2"
+                  src="./images/developer.jpg"
+                  alt="slider-photo-2"
+                />
+                <img
+                  class="slider-image"
+                  id="slide-3"
+                  src="./images/halloween.jpg"
+                  alt="slider-photo-3"
+                />
+                <img
+                  class="slider-image"
+                  id="slide-4"
+                  src="./images/voleyball.jpg"
+                  alt="slider-photo-4"
+                />
+                <div class="slider-nav">
+                  <a class="slider-button" href="#slide-1"></a>
+                  <a class="slider-button" href="#slide-2"></a>
+                  <a class="slider-button" href="#slide-3"></a>
+                  <a class="slider-button" href="#slide-4"></a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio-container container">
+          <h2 class="portfolio-subtitle subtitle">My Works</h2>
+          <ul class="portfolio-work-list">
+            <li class="portfolio-work">
+              <img
+                class="portfolio-image"
+                src="./images/work-1.jpg"
+                alt="screenshot of Weiss-website"
+                class="portfolio-image"
+              />
+              <div class="portfolio-description">
+                <h3 class="portfolio-name">Weiss Website</h3>
+                <p class="portfolio-text">
+                  WEB page written on HTML,SCSS using BEM methology
+                </p>
+                <a
+                  class="portfolio-link"
+                  href="https://github.com/NikolaiSenko/WEISS"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-sharp fa-solid fa-arrow-up-right-from-square"
+                  ></i>
+                </a>
+              </div>
+            </li>
+            <li class="portfolio-work">
+              <img
+                class="portfolio-image"
+                src="./images/work-2.jpg"
+                alt="screenshot of Pinterest Clone"
+                class="portfolio-image"
+              />
+              <div class="portfolio-description">
+                <h3 class="portfolio-name">Pintagram</h3>
+                <p class="portfolio-text">
+                  The task from courses, where in group we tried to create clone
+                  of Pinterest using just vanilla JS
+                </p>
+                <a
+                  class="portfolio-link"
+                  href="https://github.com/NikolaiSenko/Clowns-Clones"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-sharp fa-solid fa-arrow-up-right-from-square"
+                  ></i>
+                </a>
+              </div>
+            </li>
+            <li class="portfolio-work">
+              <img
+                class="portfolio-image"
+                src="./images/work-3.png"
+                alt="screenshot of Todo-list app"
+                class="portfolio-image"
+              />
+              <div class="portfolio-description">
+                <h3 class="portfolio-name">Todo-list</h3>
+                <p class="portfolio-text">
+                  Small Todo app created based on vanilla JS and Tailwind
+                </p>
+                <a
+                  class="portfolio-link"
+                  href="https://github.com/NikolaiSenko/Todo-list"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-sharp fa-solid fa-arrow-up-right-from-square"
+                  ></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="experience" id="experience">
+        <div class="experience-container container">
+          <h2 class="experience-subtitle subtitle">My experience</h2>
+          <ul class="experince-tab-titles">
+            <li
+              class="experience-tab-link tab-link--active"
+              onclick="onTabLink('education')"
+            >
+              Education
+            </li>
+            <li class="experience-tab-link" onclick="onTabLink('job')">
+              Experience
+            </li>
+            <li class="experience-tab-link" onclick="onTabLink('skills')">
+              Skills
+            </li>
+          </ul>
+          <div
+            class="experience-tab-content experience-tab-content--active"
+            id="education"
+          >
+            <div class="experience-education">
+              <div class="tab-content tab-content-education">
+                <h3 class="tab-content-title">DEGREE/ BACHELOR</h3>
+                <p class="tab-content-text">
+                  Belarussian State Economic University
+                </p>
+                <p class="tab-content-text">
+                  09/2017 - 02/2022
+                  <i class="fa-regular fa-calendar"></i>
+                </p>
+              </div>
+              <div class="tab-content tab-content-education">
+                <h3 class="tab-content-title">COURSES</h3>
+                <p class="tab-content-text">
+                  Front-end Developer in TeachMeSkills
+                </p>
+                <p class="tab-content-text">
+                  06/2021 - 02/2022
+                  <i class="fa-regular fa-calendar"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="experience-tab-content" id="job">
+            <div class="experience-job">
+              <div class="tab-content">
+                <h3 class="tab-content-title">JUNIOR FRONTEND DEVELOPER</h3>
+                <p class="tab-content-text">
+                  "Asterus" Subsidiary Enterprize Minsk
+                </p>
+                <p class="tab-content-text">
+                  09/2021 - 02/2023
+                  <i class="fa-regular fa-calendar"></i>
+                </p>
+                <p class="tab-content-text">
+                  I've taken part in 4 different React projects, have had chance
+                  to taken part in 4 different React projects, have had chance
+                  to learn about inner processes of web application development,
+                  have been involved in the product development from scratch and
+                  have worked with a team of 10 members to provide end to end
+                  solutions for clients.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="experience-tab-content" id="skills">
+            <div class="experience-skills">
+              <div class="tab-content tab-content-skills">
+                <h3 class="tab-content-title">SKILLS</h3>
+                <ul class="tab-content-list">
+                  <li class="tab-content-text">HTML</li>
+                  <li class="tab-content-text">SCSS</li>
+                  <li class="tab-content-text">CSS</li>
+                  <li class="tab-content-text">JavaScript</li>
+                  <li class="tab-content-text">React</li>
+                  <li class="tab-content-text">Typescript</li>
+                  <li class="tab-content-text">Redux</li>
+                  <li class="tab-content-text">JQuery</li>
+                  <li class="tab-content-text">MobX</li>
+                  <li class="tab-content-text">Git</li>
+                </ul>
+              </div>
+              <div class="tab-content tab-content-skills">
+                <h3 class="tab-content-title">LANGUAGES</h3>
+                <p class="tab-content-text">English - Advanced</p>
+                <p class="tab-content-text">Russian - Native</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact container" id="contact">
+        <h2 class="contact-subtitle subtitle">Contact me</h2>
+        <div class="contact-wrapper">
+          <div class="contact-mail">
+            <h3>Write me:</h3>
+            <p>
+              <i class="fa-regular fa-envelope"></i>
+              kolya.senko333@gmail.com
+            </p>
+          </div>
+          <div class="socials">
+            <h3>My socials:</h3>
+            <ul class="social-links">
+              <li>
+                <a
+                  class="social-link"
+                  href="https://t.me/gromerg"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-link"
+                  href="https://www.instagram.com/kolyasik.s"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-link"
+                  href="https://www.linkedin.com/in/nikolai-senko-05b451210/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="container"><i class="fa-regular fa-copyright"></i> Copyright</p>
+    </footer>
+  </body>
+
+  <script>
+    const tabLinks = document.querySelectorAll(".experience-tab-link");
+    const tabs = document.querySelectorAll(".experience-tab-content");
+    const onTabLink = (tabId) => {
+      const currentTab = event.target;
+      if (currentTab.className.includes("active")) {
+        return;
+      }
+      tabLinks.forEach((el) => {
+        el.classList.remove("tab-link--active");
+      });
+      currentTab.classList.add("tab-link--active");
+      tabs.forEach((el) => {
+        el.classList.remove("experience-tab-content--active");
+        if (el.id === tabId) {
+          el.classList.add("experience-tab-content--active");
+        }
+      });
+    };
+  </script>
+
+  <script>
+    const menu = document.querySelector(".navigation-list");
+    const onCloseMenu = () => {
+      menu.style.right = "-10rem";
+    };
+    const onOpenMenu = () => {
+      menu.style.right = "0";
+    };
+  </script>
+</html>
